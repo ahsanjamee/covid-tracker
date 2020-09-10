@@ -1,10 +1,81 @@
-body {
-  margin: 10px;
+* {
+  margin: 0;
+}
+body{
+  background-color: rgb(240, 239, 239);
+}
+
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .app_header{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     justify-content: space-between;
     
+}
+.app_dropdown{
+  width: 150px;
+}
+
+.app_stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_left{
+  flex: .9;
+}
+
+.info{
+  width: 100%;
+  margin-left: 15px;
+}
+
+.app_right{
+  padding-left: 20px;
+}
+
+@media (max-width: 990px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .app_right{
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+}
+
+.table{
+  margin: 20px 0 20px 0;
+  overflow: scroll;
+  height: 350px;
+  color: rgb(39, 39, 39); 
+}
+
+.table tr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.table tr:nth-of-type(odd){
+  background-color: rgba(75, 170, 185, 0.25);
+}
+
+.table td {
+  padding: 5px;
+}
+
+.table_row{
+  width: 100%;
+}
+
+.lineGraph{
+  margin-top: 20px;
+  height: 200px;
 }
