@@ -44,17 +44,17 @@ export default function SideDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      {/* <List>
           <ListItem button>
             <ListItemIcon><FlagIcon/></ListItemIcon>
             <ListItemText primary= "Bangladesh" />
           </ListItem>
       </List>
-      <Divider />
+      <Divider /> */}
       <List>
           <ListItem button>
             <ListItemIcon><AccountCircleIcon/></ListItemIcon>
-            <ListItemText primary= "About Developer" onClick={()=> window.open("https://ahsanjamee.github.io", "_blank")}/>
+            <ListItemText primary= "Github Repo" onClick={()=> window.open("https://ahsanjamee.github.io", "_blank")}/>
           </ListItem>
       </List>
     </div>

@@ -89,67 +89,13 @@ body{
   }
 }
 
-.table{
-  margin: 20px 0 20px 0;
-  overflow: scroll;
-  height: 370px;
-  color: rgb(39, 39, 39); 
-}
-
-.table tr{
-  display: flex;
-  justify-content: space-between;
-}
-
-.table tr:nth-of-type(odd){
-  background-color: rgba(75, 170, 185, 0.25);
-}
-
-.table td {
-  padding: 5px;
-}
-
-.table_row{
-  width: 100%;
-}
-
 .lineGraph{
   margin-top: 20px;
   height: 200px;
-}
-
-.map{
-  height: 450px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 20px;
-  margin: 15px 0 0 12px;
-  box-shadow: 0 0 8px -4px rgba(0, 0, 0 0.5);
-}
-
-.map .leaflet-container{
-  height: 100%;
 }
 
 .loader{
   display: flex;
   justify-content: center;
   margin-top: 23%;
-}
-
-.popup-flag img{
-  width: 100px;
-  border-radius: 10px;
-}
-
-.popup-flag{
-  height: 100px;
-  width: 100%;
-  background-size: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.popup-container div{
-  font-size: 15px;
 }
