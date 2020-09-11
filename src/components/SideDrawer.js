@@ -9,8 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import FlagIcon from '@material-ui/icons/Flag';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles({
   list: {
@@ -53,8 +52,8 @@ export default function SideDrawer() {
       <Divider /> */}
       <List>
           <ListItem button>
-            <ListItemIcon><AccountCircleIcon/></ListItemIcon>
-            <ListItemText primary= "Github Repo" onClick={()=> window.open("https://ahsanjamee.github.io", "_blank")}/>
+            <ListItemIcon><GitHubIcon/></ListItemIcon>
+            <ListItemText primary= "Github Repo" onClick={()=> window.open("https://github.com/ahsanjamee/covid-tracker", "_blank")}/>
           </ListItem>
       </List>
     </div>
