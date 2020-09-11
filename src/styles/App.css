@@ -43,6 +43,7 @@ body{
 }
 
 .app_dropdown{
+  background-color: white;
   width: 150px;
 }
 
@@ -57,7 +58,10 @@ body{
 
 .info{
   width: 100%;
-  margin-left: 15px;
+}
+
+.info:not(:last-child){
+  margin-right: 15px;
 }
 
 .info:hover{
@@ -92,17 +96,12 @@ body{
   border-color: rgb(30, 175, 30);
 }
 
-.app_right{
-  padding-left: 20px;
-}
-
 @media (max-width: 990px) {
   .App {
     flex-direction: column;
   }
 
   .app_right{
-    padding-left: 15px;
     padding-top: 30px;
   }
 }
@@ -110,6 +109,9 @@ body{
 @media (max-width: 500px){
   .app_header_title, .globe_icon{
     font-size: 1.5rem !important;
+  }
+  .info_title, .info_cases, .info_total{
+    font-size: .75rem !important;
   }
 }
 
@@ -122,4 +124,9 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 23%;
+}
+
+.menu_button{
+  margin-left: -15px !important;
+  padding-left: 0px !important;
 }

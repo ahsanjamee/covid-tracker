@@ -63,7 +63,7 @@ export default function SideDrawer() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer( anchor , true)}><MenuIcon/></Button>
+          <Button className="menu_button" onClick={toggleDrawer( anchor , true)}><MenuIcon/></Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
