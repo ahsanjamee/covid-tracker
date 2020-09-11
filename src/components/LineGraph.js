@@ -32,7 +32,7 @@ const options = {
       {
         type: "time",
         time: {
-          format: "MM/DD/YY"
+          parser: "MM/DD/YY"
         }
       }
     ],

@@ -36,6 +36,38 @@ body{
   margin-left: 15px;
 }
 
+.info:hover{
+  box-shadow: 1px 1px 3px 3px rgba(30, 5, 5, 0.25);
+  cursor: pointer;
+}
+
+.info_title{
+  margin: 5px 0 !important;
+  font-weight: 700 !important;
+}
+
+.info_cases{
+  margin-bottom: 5px !important;
+  font-weight: 600 !important;
+  color: rgb(225, 50, 50);
+}
+
+.info_total{
+  font-weight: 600 !important;
+}
+
+.info-selected{
+  border-top: 7px solid rgb(225, 50, 50);
+}
+
+.info_cases-green{
+  color: rgb(30, 175, 30);
+}
+
+.border-color{
+  border-color: rgb(30, 175, 30);
+}
+
 .app_right{
   padding-left: 20px;
 }
@@ -51,10 +83,16 @@ body{
   }
 }
 
+@media (max-width: 420px){
+  .app_header_title{
+    font-size: 1.5rem;
+  }
+}
+
 .table{
   margin: 20px 0 20px 0;
   overflow: scroll;
-  height: 350px;
+  height: 370px;
   color: rgb(39, 39, 39); 
 }
 
@@ -78,4 +116,40 @@ body{
 .lineGraph{
   margin-top: 20px;
   height: 200px;
+}
+
+.map{
+  height: 450px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 15px 0 0 12px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0 0.5);
+}
+
+.map .leaflet-container{
+  height: 100%;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  margin-top: 23%;
+}
+
+.popup-flag img{
+  width: 100px;
+  border-radius: 10px;
+}
+
+.popup-flag{
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-container div{
+  font-size: 15px;
 }
