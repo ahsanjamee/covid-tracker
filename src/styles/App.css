@@ -18,6 +18,30 @@ body{
     justify-content: space-between;
     
 }
+
+.app_header_title{
+  color: rgb(60, 130, 250);
+}
+
+.globe_icon{
+  font-size: 2rem !important;
+  margin-bottom: -5px;
+  color: rgb(60, 130, 250);
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+      transform:rotateY(0deg);
+  }
+  to {
+      transform:rotateY(360deg);
+  }
+}
+
 .app_dropdown{
   width: 150px;
 }
@@ -83,9 +107,9 @@ body{
   }
 }
 
-@media (max-width: 420px){
-  .app_header_title{
-    font-size: 1.5rem;
+@media (max-width: 500px){
+  .app_header_title, .globe_icon{
+    font-size: 1.5rem !important;
   }
 }
 

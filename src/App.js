@@ -14,6 +14,7 @@ import {
   CardContent,
 } from "@material-ui/core";
 import Loader from "react-loader-spinner";
+import PublicIcon from '@material-ui/icons/Public';
 
 import "./styles/App.css";
 import "./styles/Map.css";
@@ -109,7 +110,7 @@ function App() {
           <div className="app_left">
             <div className="app_header">
               <SideDrawer />
-              <h1 className="app_header_title"> Covid-19</h1>
+              <h1 className="app_header_title"> <PublicIcon className="globe_icon"/> Covid Tracker</h1>
               <FormControl className="app_dropdown">
                 <Select
                   variant="outlined"
